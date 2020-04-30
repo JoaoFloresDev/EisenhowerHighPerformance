@@ -1,4 +1,10 @@
-
+//
+//  ChecklistViewController.swift
+//  Calculator Notes
+//
+//  Created by Joao Flores on 27/04/20.
+//  Copyright © 2020 Joao Flores. All rights reserved.
+//
 
 import UIKit
 import SwiftReorder
@@ -59,11 +65,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
             self.navigationController?.navigationBar.backgroundColor = UIColor.black
         }
         
-        print("------------------------")
-        print(checklist.name)
-        print(self.navigationController!.title!)
-        
-        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["bc9b21ec199465e69782ace1e97f5b79"]
+//        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["bc9b21ec199465e69782ace1e97f5b79"]
 
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         addBannerViewToView(bannerView)
@@ -137,7 +139,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         if segue.identifier == "AddItem" {
             let navigationController = segue.destination as! UINavigationController
             let controller = navigationController.topViewController as! ItemDetailViewController
-            controller.delegate = self //接收delegate
+            controller.delegate = self
         } else if segue.identifier == "EditItem" {
             let navigationController = segue.destination as! UINavigationController
             let controller = navigationController.topViewController as! ItemDetailViewController

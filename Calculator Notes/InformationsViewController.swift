@@ -2,8 +2,8 @@
 //  InformationsViewController.swift
 //  Calculator Notes
 //
-//  Created by Joao Flores on 29/04/20.
-//  Copyright © 2020 MakeSchool. All rights reserved.
+//  Created by Joao Flores on 27/04/20.
+//  Copyright © 2020 Joao Flores. All rights reserved.
 //
 
 import UIKit
@@ -17,28 +17,73 @@ class InformationsViewController: UIViewController {
     @IBOutlet weak var Q2: UIView!
     @IBOutlet weak var Q3: UIView!
     @IBOutlet weak var Q4: UIView!
-    @IBOutlet weak var Label1: UILabel!
-    @IBOutlet weak var Label2: UILabel!
+    @IBOutlet weak var matrixLabel1: UILabel!
+    @IBOutlet weak var matrixLabel2: UILabel!
     @IBOutlet weak var squareView: UIView!
     
-    @IBOutlet weak var DoView: UIView!
-    @IBOutlet weak var DecideView: UIView!
-    @IBOutlet weak var DelegateView: UIView!
-    @IBOutlet weak var DeleteView: UIView!
-    @IBOutlet weak var ImportantView: UIView!
-    @IBOutlet weak var UrgentView: UIView!
+    @IBOutlet weak var doView: UIView!
+    @IBOutlet weak var decideView: UIView!
+    @IBOutlet weak var delegateView: UIView!
+    @IBOutlet weak var deleteView: UIView!
+    @IBOutlet weak var importantView: UIView!
+    @IBOutlet weak var urgentView: UIView!
+    
+//    MARK: - IBActions
+    
+    @IBAction func mktDispensado(_ sender: Any) {
+        let urlStr = "itms-apps://itunes.apple.com/app/apple-store/id1508371263"
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
+            
+        } else {
+            UIApplication.shared.openURL(URL(string: urlStr)!)
+        }
+    }
+    
+    @IBAction func mktDrawInAir(_ sender: Any) {
+        let urlStr = "itms-apps://itunes.apple.com/app/apple-store/id1502280869"
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
+            
+        } else {
+            UIApplication.shared.openURL(URL(string: urlStr)!)
+        }
+    }
+    
+    @IBAction func mktCalcNotes(_ sender: Any) {
+        let urlStr = "itms-apps://itunes.apple.com/app/apple-store/id1479873340"
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
+            
+        } else {
+            UIApplication.shared.openURL(URL(string: urlStr)!)
+        }
+    }
+    
+    @IBAction func mktTrucoM(_ sender: Any) {
+        let urlStr = "itms-apps://itunes.apple.com/app/apple-store/id1486427751"
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
+            
+        } else {
+            UIApplication.shared.openURL(URL(string: urlStr)!)
+        }
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Label1.text = "Important"
-        Label2.text = "Not Important"
+        matrixLabel1.text = "Important"
+        matrixLabel2.text = "Not Important"
         
-        Label1.transform = CGAffineTransform(rotationAngle: -3.14/2)
-        Label2.transform = CGAffineTransform(rotationAngle: -3.14/2)
+        matrixLabel1.transform = CGAffineTransform(rotationAngle: -3.14/2)
+        matrixLabel2.transform = CGAffineTransform(rotationAngle: -3.14/2)
         
-        Label1.frame = CGRect(x: 10, y: Q1.center.y + 15, width: 20, height: 138.5)
-        Label2.frame = CGRect(x: 10, y: Q4.center.y + 15, width: 20, height: 138.5)
+        matrixLabel1.frame = CGRect(x: 10, y: Q1.center.y + 15, width: 20, height: 138.5)
+        matrixLabel2.frame = CGRect(x: 10, y: Q4.center.y + 15, width: 20, height: 138.5)
         
         StyleClass().cropBounds(viewlayer: Q1.layer, cornerRadius: 10)
         StyleClass().cropBounds(viewlayer: Q2.layer, cornerRadius: 10)
@@ -50,20 +95,23 @@ class InformationsViewController: UIViewController {
         StyleClass().applicShadow(Layer: Q3.layer)
         StyleClass().applicShadow(Layer: Q4.layer)
         
-        StyleClass().cropBounds(viewlayer: DecideView.layer, cornerRadius: 10)
-        StyleClass().cropBounds(viewlayer: DelegateView.layer, cornerRadius: 10)
-        StyleClass().cropBounds(viewlayer: DeleteView.layer, cornerRadius: 10)
-        StyleClass().cropBounds(viewlayer: ImportantView.layer, cornerRadius: 10)
-        StyleClass().cropBounds(viewlayer: DoView.layer, cornerRadius: 10)
+        StyleClass().cropBounds(viewlayer: decideView.layer, cornerRadius: 10)
+        StyleClass().cropBounds(viewlayer: delegateView.layer, cornerRadius: 10)
+        StyleClass().cropBounds(viewlayer: deleteView.layer, cornerRadius: 10)
+        StyleClass().cropBounds(viewlayer: importantView.layer, cornerRadius: 10)
+        StyleClass().cropBounds(viewlayer: doView.layer, cornerRadius: 10)
         
-        StyleClass().applicShadow(Layer: DecideView.layer)
-        StyleClass().applicShadow(Layer: DelegateView.layer)
-        StyleClass().applicShadow(Layer: DeleteView.layer)
-        StyleClass().applicShadow(Layer: ImportantView.layer)
-        StyleClass().applicShadow(Layer: DoView.layer)
+        StyleClass().applicShadow(Layer: decideView.layer)
+        StyleClass().applicShadow(Layer: delegateView.layer)
+        StyleClass().applicShadow(Layer: deleteView.layer)
+        StyleClass().applicShadow(Layer: importantView.layer)
+        StyleClass().applicShadow(Layer: doView.layer)
         
         StyleClass().cropBounds(viewlayer: matrixView.layer, cornerRadius: 10)
         StyleClass().applicShadow(Layer: matrixView.layer)
+        
+        StyleClass().cropBounds(viewlayer: urgentView.layer, cornerRadius: 10)
+        StyleClass().applicShadow(Layer: urgentView.layer)
     }
 
 }

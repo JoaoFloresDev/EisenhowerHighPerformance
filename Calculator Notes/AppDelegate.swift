@@ -1,4 +1,10 @@
-
+//
+//  AppDelegate.swift
+//  App
+//
+//  Created by Joao Flores on 27/04/20.
+//  Copyright © 2020 Joao Flores. All rights reserved.
+//
 
 import UIKit
 import UserNotifications
