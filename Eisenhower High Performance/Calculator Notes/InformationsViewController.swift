@@ -26,7 +26,8 @@ class InformationsViewController: UIViewController {
     @IBOutlet weak var DelegateView: UIView!
     @IBOutlet weak var DeleteView: UIView!
     @IBOutlet weak var ImportantView: UIView!
-    @IBOutlet weak var UrgentView: UIView!
+    @IBOutlet weak var upgradeButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,8 @@ class InformationsViewController: UIViewController {
         
         StyleClass().cropBounds(viewlayer: matrixView.layer, cornerRadius: 10)
         StyleClass().applicShadow(Layer: matrixView.layer)
+        
+        StyleClass().cropBounds(viewlayer: upgradeButton.layer, cornerRadius: 10)
     }
 
 }

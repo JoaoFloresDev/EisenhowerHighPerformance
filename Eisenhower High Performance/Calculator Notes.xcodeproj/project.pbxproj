@@ -11,6 +11,11 @@
 		2E4A079E1C42F3B0007F415F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A079C1C42F3B0007F415F /* LaunchScreen.storyboard */; };
 		848490D31D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848490D11D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld */; };
 		C462B4FA245A0C8200FDC887 /* InformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462B4F9245A0C8200FDC887 /* InformationsViewController.swift */; };
+		C4CC0C6B249EB3AB00EE3D89 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0C66249EB3A900EE3D89 /* DetailViewController.swift */; };
+		C4CC0C6C249EB3AB00EE3D89 /* RazeFaceProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0C67249EB3AA00EE3D89 /* RazeFaceProducts.swift */; };
+		C4CC0C6D249EB3AB00EE3D89 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0C68249EB3AA00EE3D89 /* IAPHelper.swift */; };
+		C4CC0C6F249EB3AB00EE3D89 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0C6A249EB3AB00EE3D89 /* ProductCell.swift */; };
+		C4CC0C72249EB3EC00EE3D89 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC0C70249EB3EB00EE3D89 /* MasterViewController.swift */; };
 		C4FCBBCB245875BF00E1BC26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FCBBC0245875B900E1BC26 /* Main.storyboard */; };
 		C4FCBBCE245875BF00E1BC26 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCBBC3245875BB00E1BC26 /* ChecklistViewController.swift */; };
 		C4FCBBCF245875BF00E1BC26 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FCBBC4245875BC00E1BC26 /* Checklist.swift */; };
@@ -37,13 +42,18 @@
 
 /* Begin PBXFileReference section */
 		05FA8832987AEB633406050B /* Pods-Calculator Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator Notes.release.xcconfig"; path = "Target Support Files/Pods-Calculator Notes/Pods-Calculator Notes.release.xcconfig"; sourceTree = "<group>"; };
-		2E4A07901C42F3B0007F415F /* Eisenhower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eisenhower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4A07901C42F3B0007F415F /* Cronos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cronos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4A079A1C42F3B0007F415F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E4A079D1C42F3B0007F415F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E4A079F1C42F3B0007F415F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		507DCE2495DCDB987B456563 /* Pods-Calculator Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator Notes.debug.xcconfig"; path = "Target Support Files/Pods-Calculator Notes/Pods-Calculator Notes.debug.xcconfig"; sourceTree = "<group>"; };
 		848490D21D68F5610043C60B /* MakeSchoolNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeSchoolNotes.xcdatamodel; sourceTree = "<group>"; };
 		C462B4F9245A0C8200FDC887 /* InformationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationsViewController.swift; sourceTree = "<group>"; };
+		C4CC0C66249EB3A900EE3D89 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C4CC0C67249EB3AA00EE3D89 /* RazeFaceProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RazeFaceProducts.swift; sourceTree = "<group>"; };
+		C4CC0C68249EB3AA00EE3D89 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		C4CC0C6A249EB3AB00EE3D89 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C4CC0C70249EB3EB00EE3D89 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		C4FCBBC0245875B900E1BC26 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C4FCBBC3245875BB00E1BC26 /* ChecklistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		C4FCBBC4245875BC00E1BC26 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
@@ -70,6 +80,7 @@
 		2E4A07871C42F3B0007F415F = {
 			isa = PBXGroup;
 			children = (
+				C4CC0C65249EB39E00EE3D89 /* Purchase */,
 				2E4A07921C42F3B0007F415F /* Calculator Notes */,
 				2E4A07911C42F3B0007F415F /* Products */,
 				5FB3F66AA083A2925A79BEE2 /* Pods */,
@@ -80,7 +91,7 @@
 		2E4A07911C42F3B0007F415F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E4A07901C42F3B0007F415F /* Eisenhower.app */,
+				2E4A07901C42F3B0007F415F /* Cronos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +133,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C4CC0C65249EB39E00EE3D89 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				C4CC0C66249EB3A900EE3D89 /* DetailViewController.swift */,
+				C4CC0C68249EB3AA00EE3D89 /* IAPHelper.swift */,
+				C4CC0C6A249EB3AB00EE3D89 /* ProductCell.swift */,
+				C4CC0C67249EB3AA00EE3D89 /* RazeFaceProducts.swift */,
+				C4CC0C70249EB3EB00EE3D89 /* MasterViewController.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,7 +165,7 @@
 			);
 			name = "Calculator Notes";
 			productName = MakeSchoolNotes;
-			productReference = 2E4A07901C42F3B0007F415F /* Eisenhower.app */;
+			productReference = 2E4A07901C42F3B0007F415F /* Cronos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -268,10 +291,15 @@
 				C4FCBBD0245875BF00E1BC26 /* DataModel.swift in Sources */,
 				C4FCBBD3245875BF00E1BC26 /* ChecklistItem.swift in Sources */,
 				C4FCBBD1245875BF00E1BC26 /* ItemDetailViewController.swift in Sources */,
+				C4CC0C6D249EB3AB00EE3D89 /* IAPHelper.swift in Sources */,
+				C4CC0C6F249EB3AB00EE3D89 /* ProductCell.swift in Sources */,
 				C4FCBBD2245875BF00E1BC26 /* StyleClass.swift in Sources */,
+				C4CC0C6C249EB3AB00EE3D89 /* RazeFaceProducts.swift in Sources */,
 				C4FCBBCF245875BF00E1BC26 /* Checklist.swift in Sources */,
 				C462B4FA245A0C8200FDC887 /* InformationsViewController.swift in Sources */,
+				C4CC0C6B249EB3AB00EE3D89 /* DetailViewController.swift in Sources */,
 				848490D31D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld in Sources */,
+				C4CC0C72249EB3EC00EE3D89 /* MasterViewController.swift in Sources */,
 				C4FCBBCE245875BF00E1BC26 /* ChecklistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,18 +410,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Calculator Notes/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 5;
+				MARKETING_VERSION = 7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joao.HighPerformance;
-				PRODUCT_NAME = Eisenhower;
+				PRODUCT_NAME = Cronos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Calculator Notes/Calculator Notes-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -407,18 +435,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Calculator Notes/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 5;
+				MARKETING_VERSION = 7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joao.HighPerformance;
-				PRODUCT_NAME = Eisenhower;
+				PRODUCT_NAME = Cronos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Calculator Notes/Calculator Notes-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

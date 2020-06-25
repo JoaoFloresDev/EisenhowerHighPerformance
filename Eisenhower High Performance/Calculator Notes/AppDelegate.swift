@@ -46,6 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let center = UNUserNotificationCenter.current()
 
         center.delegate = self
+
+        
         return true
     }
     

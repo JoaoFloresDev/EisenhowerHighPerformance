@@ -30,8 +30,17 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+        if(RazeFaceProducts.store.isProductPurchased("NoAds.Cronos") || (UserDefaults.standard.object(forKey: "NoAds.Cronos") != nil)) {
+            if let banner = bannerView {
+                banner.removeFromSuperview()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.tableView.separatorStyle = .none
         
         for list in dataModel.lists {
@@ -66,20 +75,23 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
             self.navigationController?.navigationBar.backgroundColor = UIColor.black
         }
         
-        print("------------------------")
-        print(checklist.name)
-        print(self.navigationController!.title!)
         
-//        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["bc9b21ec199465e69782ace1e97f5b79"]
+        if(RazeFaceProducts.store.isProductPurchased("NoAds.Cronos") || (UserDefaults.standard.object(forKey: "NoAds.Cronos") != nil)) {
+            if let banner = bannerView {
+                banner.removeFromSuperview()
+            }
+        }
+        else {
 
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
+            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+            addBannerViewToView(bannerView)
 
-        bannerView.adUnitID = "ca-app-pub-8858389345934911/9257029729"
-        bannerView.rootViewController = self
+            bannerView.adUnitID = "ca-app-pub-8858389345934911/2246971036"
+            bannerView.rootViewController = self
 
-        bannerView.load(GADRequest())
-        bannerView.delegate = self
+            bannerView.load(GADRequest())
+            bannerView.delegate = self    
+        }
     }
     
     func addBannerViewToView(_ bannerView: GADBannerView) {
